@@ -1,7 +1,6 @@
-# 吃什麼不煩惱ChatBot
+# 計算理論Project-吃什麼不煩惱ChatBot
 
-每天都在煩惱吃什麼嗎?    
-從今天開始，不用再煩惱了!          
+每天都在煩惱吃什麼嗎?  
 只要輸入想吃的類型，他就會推薦你每一餐的好選擇^^
 
 
@@ -9,7 +8,7 @@
 ![fsm](./show-fsm.png)
 
 ## Usage
->user  
+>#user  
 
 The initial state is set to `user`.
 
@@ -37,7 +36,7 @@ After input "dinner", it will stay at state `dinner`.
  
 Besides, we can input "back to [PRIVIOUS STATE]" at any following states to return to the previous state.  
  
->breakfast  
+>#breakfast  
 
 Every time `breakfast` state is triggered to `money1` to another state, it will stay at the state after the bot replies corresponding message.
 
@@ -52,7 +51,7 @@ After input "a", it will stay at state `below100`.
 After input ""b", it will stay at state `100up`.   
 
 
->lunch & dinner  
+>#lunch & dinner  
 
 Every time `lunch` state is triggered to `food1` to another state, it will stay at the state after the bot replies corresponding message.
 
@@ -68,7 +67,7 @@ After input "noodle", it will stay at state `noodle`.
          Enter 2 for NT100-200
 After input "rice", it will stay at state `rice`.
 
->noodle  
+>#noodle  
 
 Every time `noodle` state is triggered to `money2` to another state, it will stay at the state after the bot replies corresponding message.
 
@@ -82,7 +81,7 @@ After input "1", it will stay at state `rest50`.
         *It is also available to click the link to get the location on google map.
 After input "2", it will stay at state `rest100`. 
 
->rice  
+>#rice  
 
 Every time `rice` state is triggered to `money3` to another state, it will stay at the state after the bot replies corresponding message.
 
